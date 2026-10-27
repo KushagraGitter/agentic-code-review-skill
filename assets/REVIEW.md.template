@@ -1,0 +1,30 @@
+# REVIEW.md — <repo or directory name>
+
+<!-- Written by code owners. Keep it short: every review loads it. Place one at the repo root and optionally in sensitive subdirectories; the nearest one wins for its subtree. -->
+
+## What failure looks like here
+<!-- One or two lines. Examples: docs → "it lies"; config → "it misroutes"; billing → "someone is charged wrong"; migrations → "data is lost or unreadable". -->
+-
+
+## Always flag
+<!-- Repo-specific bugs that matter most. Be concrete. -->
+-
+
+## Always needs a human (regardless of risk tier)
+<!-- Paths/globs. -->
+- `.github/workflows/**`
+-
+
+## Skip
+<!-- Generated, vendored or fixture paths the reviewer should ignore. -->
+-
+
+## Nits
+- Cap: 3 per review. Do not flag formatting the linter already enforces.
+
+## Evidence rules
+- Every finding cites `file:line` and a concrete trigger. No guesses from names.
+- Tag each finding Important / Nit / Pre-existing.
+
+## Summary format
+- Start with the count (e.g. "2 important · 1 nit"). If there is nothing to fix, say "Nothing to fix." plainly.
